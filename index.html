@@ -1,8 +1,74 @@
-<html>
-  <head> 
-    <title> Hello World </title>
-  </head>
-  <body> 
-    <h1> Hello World</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Custom Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      color: #333;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #0073e6;
+    }
+    section {
+      padding: 3rem 1rem;
+    }
+    footer {
+      background: rgba(255,255,255,0.9);
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌐 Welcome to My Website</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! 👋 I just launched my first website using GitHub Pages.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <p>Here I will share cool things I build.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <a href="mailto:your@email.com">your@email.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 My Website | Built with GitHub Pages</p>
+  </footer>
+</body>
 </html>
