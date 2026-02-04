@@ -53,29 +53,40 @@
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
+ <section id="projects">
+  <h2>Projects</h2>
 
-    <div class="project-card">
-      <h3>SQL CSV Import & Analysis</h3>
-      <p>
-        Imported a large CSV file into a SQL database, verified row counts,
-        used DISTINCT queries, and ensured data integrity.
-      </p>
-      <a href="https://github.com/yourusername/your-repo" target="_blank">View on GitHub →</a>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarousel(-1)">‹</button>
+
+    <div class="carousel" id="carousel">
+
+      <a class="project-card" href="projects/sql-csv-import.html">
+        <div class="project-image" style="background-image: url('images/sql.jpg');"></div>
+        <h3>SQL CSV Import & Validation</h3>
+        <p>Large CSV → SQL database with row-count and integrity checks.</p>
+      </a>
+
+      <a class="project-card" href="projects/flask-pagination.html">
+        <div class="project-image" style="background-image: url('images/flask.jpg');"></div>
+        <h3>Flask Table Viewer</h3>
+        <p>Web interface with pagination for large SQL tables.</p>
+      </a>
+
+      <a class="project-card" href="projects/data-analysis.html">
+        <div class="project-image" style="background-image: url('images/data.jpg');"></div>
+        <h3>Data Exploration Queries</h3>
+        <p>COUNT, DISTINCT, grouping, and real-world SQL analysis.</p>
+      </a>
+
     </div>
 
-    <div class="project-card">
-      <h3>Flask Data Viewer with Pagination</h3>
-      <p>
-        Built a Flask web app to display database tables with pagination,
-        handling thousands of rows efficiently.
-      </p>
-      <a href="https://github.com/yourusername/your-repo" target="_blank">View on GitHub →</a>
-    </div>
+    <button class="carousel-btn right" onclick="scrollCarousel(1)">›</button>
+  </div>
+</section>
 
-  </section>
+<script src="carousel.js"></script>
+
 
   <!-- Contact -->
   <section id="contact">
