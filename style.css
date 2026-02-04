@@ -1,220 +1,179 @@
-/* Reset */
+/* =========================
+   Base Reset & Typography
+   ========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #0f1115;
-  color: #e6e6e6;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0e1116;
+  color: #e6e8eb;
   line-height: 1.6;
 }
 
-/* Header */
+/* =========================
+   Layout
+   ========================= */
+header,
+section,
+footer {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* =========================
+   Header
+   ========================= */
 header {
-  padding: 3rem 1rem;
-  text-align: center;
-  border-bottom: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.tagline {
-  margin-top: 0.5rem;
-  color: #9aa0a6;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 nav {
-  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 nav a {
-  margin: 0 12px;
+  color: #9aa4b2;
   text-decoration: none;
-  color: #7ee787;
-  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #7ee787;
 }
 
-/* Sections */
-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 4rem 1.5rem;
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-section p {
-  color: #cfcfcf;
-}
-
-/* Hero */
+/* =========================
+   Hero Section
+   ========================= */
 .hero {
-  text-align: center;
+  padding-top: 4rem;
 }
 
-.hero h2 {
-  font-size: 2.2rem;
+.hero-content h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  max-width: 700px;
+  letter-spacing: -0.5px;
 }
 
-.hero p {
+.hero-content p {
   margin-top: 1rem;
+  color: #aab2bf;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* Skills */
-.skills-list {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+/* =========================
+   Section Headings
+   ========================= */
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
-.skills-list span {
-  padding: 6px 12px;
-  border: 1px solid #2a2a2a;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  background: #15181d;
-}
-
-/* Projects */
-.project-card {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  border: 1px solid #2a2a2a;
-  border-radius: 8px;
-  background: #15181d;
-}
-
-.project-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.project-card p {
-  margin-bottom: 0.8rem;
-}
-
-.project-card a {
-  color: #7ee787;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.project-card a:hover {
-  text-decoration: underline;
-}
-
-/* Contact */
-#contact a {
-  color: #7ee787;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  border-top: 1px solid #222;
-  color: #9aa0a6;
-  font-size: 0.9rem;
-}
-
-/* Carousel */
+/* =========================
+   Carousel
+   ========================= */
 .carousel-container {
   position: relative;
-  margin-top: 2rem;
 }
 
 .carousel {
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
   overflow-x: auto;
+  padding-bottom: 1rem;
   scroll-behavior: smooth;
-  padding: 1rem 0;
 }
 
 .carousel::-webkit-scrollbar {
   display: none;
 }
 
-/* Project Card */
+/* =========================
+   Project Cards
+   ========================= */
 .project-card {
-  min-width: 280px;
-  max-width: 280px;
-  background: #15181d;
-  border: 1px solid #2a2a2a;
-  border-radius: 10px;
+  min-width: 300px;
+  background: #151a21;
+  border: 1px solid #1f2630;
+  border-radius: 12px;
   text-decoration: none;
   color: inherit;
-  flex-shrink: 0;
-  transition: transform 0.2s, border 0.2s;
+  transition: transform 0.25s ease, border 0.25s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   border-color: #7ee787;
 }
 
 .project-image {
-  height: 160px;
+  height: 170px;
   background-size: cover;
   background-position: center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 12px 12px 0 0;
 }
 
 .project-card h3 {
-  padding: 1rem 1rem 0.5rem;
+  padding: 1.1rem 1.1rem 0.4rem;
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .project-card p {
-  padding: 0 1rem 1.2rem;
+  padding: 0 1.1rem 1.3rem;
   font-size: 0.9rem;
-  color: #cfcfcf;
+  color: #b8c0cc;
 }
 
-/* Carousel Buttons */
+/* =========================
+   Carousel Buttons
+   ========================= */
 .carousel-btn {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #0f1115;
-  border: 1px solid #2a2a2a;
+  top: 45%;
+  background: #0e1116;
+  border: 1px solid #1f2630;
   color: #7ee787;
-  font-size: 1.8rem;
-  padding: 4px 12px;
+  font-size: 1.6rem;
+  padding: 6px 14px;
+  border-radius: 8px;
   cursor: pointer;
-  border-radius: 6px;
 }
 
 .carousel-btn.left {
-  left: -10px;
+  left: -12px;
 }
 
 .carousel-btn.right {
-  right: -10px;
+  right: -12px;
 }
 
 .carousel-btn:hover {
-  background: #15181d;
+  background: #151a21;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  margin-top: 4rem;
+  border-top: 1px solid #1f2630;
+  color: #8f98a6;
+  font-size: 0.85rem;
 }
