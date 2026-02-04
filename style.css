@@ -138,3 +138,83 @@ footer {
   color: #9aa0a6;
   font-size: 0.9rem;
 }
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Project Card */
+.project-card {
+  min-width: 280px;
+  max-width: 280px;
+  background: #15181d;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+  transition: transform 0.2s, border 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #7ee787;
+}
+
+.project-image {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-card h3 {
+  padding: 1rem 1rem 0.5rem;
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  padding: 0 1rem 1.2rem;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0f1115;
+  border: 1px solid #2a2a2a;
+  color: #7ee787;
+  font-size: 1.8rem;
+  padding: 4px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.carousel-btn.left {
+  left: -10px;
+}
+
+.carousel-btn.right {
+  right: -10px;
+}
+
+.carousel-btn:hover {
+  background: #15181d;
+}
