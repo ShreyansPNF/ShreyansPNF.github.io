@@ -1,117 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shreyans | Portfolio</title>
-   <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css?v=5">
+
+  <!-- Optional Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class= "logo-container"
-      <img src="images/banner.png"
-  class="logo"
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Center Logo -->
+      <div class="logo">
+        <!-- Replace logo.png with your logo file -->
+        <img src="logo.png" alt="Shreyans Logo">
       </div>
-    <h1>Shreyans</h1>
-    <p class="tagline">Student • SQL & Python Enthusiast • Web Builder</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+    </div>
   </header>
 
-  <!-- Hero -->
+  <!-- ================= HERO ================= -->
   <section class="hero">
-    <h2>Building real projects, one query at a time.</h2>
+    <h1>Hi, I’m Shreyans</h1>
     <p>
-      I enjoy working with databases, Python, and turning data into
-      simple, usable web interfaces.
+      Student · SQL · Python · Data Analysis · Web Development
     </p>
   </section>
 
-  <!-- About -->
-  <section id="about">
+  <!-- ================= PROJECTS ================= -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+
+    <div class="carousel">
+
+      <!-- Project Card 1 -->
+      <a href="sql-project.html" class="card">
+        <span>Hospital Billing SQL Analysis</span>
+      </a>
+
+      <!-- Project Card 2 -->
+      <a href="python-project.html" class="card">
+        <span>Python CSV & Data Processing</span>
+      </a>
+
+      <!-- Project Card 3 -->
+      <a href="grade9.html" class="card">
+        <span>Grade 9 Python Programs</span>
+      </a>
+
+      <!-- Add more cards anytime -->
+      <!--
+      <a href="new-project.html" class="card">
+        <span>New Project</span>
+      </a>
+      -->
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
     <h2>About Me</h2>
     <p>
-      I’m a student learning by building real projects — from importing
-      large CSV files into SQL databases to creating Flask web apps with
-      pagination and clean UIs. I like understanding how things work,
-      not just making them work.
+      I enjoy working with real-world data, building SQL databases,
+      analyzing hospital billing records, and turning datasets into
+      meaningful insights using Python and web technologies.
     </p>
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <span>SQL</span>
-      <span>Python</span>
-      <span>Flask</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>Data Handling</span>
-    </div>
-  </section>
-
- <section id="projects">
-  <h2>Projects</h2>
-
-  <div class="carousel-container">
-    <button class="carousel-btn left" onclick="scrollCarousel(-1)">‹</button>
-
-    <div class="carousel" id="carousel">
-
-      <a class="project-card" href="projects/sql-csv-import.html">
-        <div class="project-image" style="background-image: url('images/sql.png');"></div>
-        <h3>SQL CSV Import & Validation</h3>
-        <p>Large CSV → SQL database with row-count and integrity checks.</p>
-      </a>
-
-      <a class="project-card" href="projects/flask-pagination.html">
-        <div class="project-image" style="background-image: url('images/flask.png');"></div>
-        <h3>Flask Table Viewer</h3>
-        <p>Web interface with pagination for large SQL tables.</p>
-      </a>
-
-      <a class="project-card" href="projects/data-analysis.html">
-        <div class="project-image" style="background-image: url('images/project-files.png');"></div>
-        <h3>Data Exploration Queries</h3>
-        <p>COUNT, DISTINCT, grouping, and real-world SQL analysis.</p>
-      </a>
-
-      <a class="project-card" href="projects/python.html">
-        <div class="project-image" style="background-image: url('images/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn.png');"></div>
-        <h3>Python Programs (Iteration & Loop)</h3>
-        <p>Simple Python Programs for Simple Real-World Calculations..</p>
-      </a>
-
-    </div>
-
-    <button class="carousel-btn right" onclick="scrollCarousel(1)">›</button>
-  </div>
-</section>
-
-<script src="carousel.js"></script>
-
-
-  <!-- Contact -->
-  <section id="contact">
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
     <h2>Contact</h2>
     <p>
-      GitHub: <a href="https://github.com/ShreyansPNF" target="_blank">github.com/ShreyansPNF</a>
-      
+      GitHub:
+      <a href="https://github.com/ShreyansPNF" target="_blank">
+        github.com/ShreyansPNF
+      </a>
     </p>
-    <p>Email: your@email.com</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Shreyans • Built with GitHub Pages</p>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© 2025 Shreyans · Built with HTML, CSS & GitHub Pages</p>
   </footer>
 
 </body>
