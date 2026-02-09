@@ -151,3 +151,32 @@ footer {
   color: #9aa7ff;
   font-size: 0.9rem;
 }
+
+/* ...keep your CSS here, but add the grid for project cards: ... */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 2.3rem 1rem;
+  text-align: center;
+  color: #cfd6ff;
+  font-size: 1.13rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
+  transition: background 0.25s, box-shadow 0.25s, color 0.18s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: rgba(70, 100, 255, 0.1);
+  color: #fff;
+}
