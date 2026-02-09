@@ -6,7 +6,8 @@
   <title>Shreyans | Portfolio</title>
 
   <link rel="stylesheet" href="style.css?v=5">
-
+<!-- Be sure to include this before </body> -->
+<script src="carousel.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -39,26 +40,31 @@
   </section>
 
   <!-- ================= PROJECTS ================= -->
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <a href="projects/sql-csv-import.html" class="card">
+<!-- ...header, hero, etc above... -->
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#8592;</button>
+    <div class="carousel" id="carousel">
+      <a href="projects/sql-csv-import.html" class="carousel-item card">
         <span>SQL Healthcare Dashboard</span>
       </a>
-
-      <a href="projects/data-analysis.html" class="card">
+      <a href="projects/data-analysis.html" class="carousel-item card">
         <span>Data Analysis Tasks</span>
       </a>
-
-      <a href="projects/flash-pagination.html" class="card">
+      <a href="projects/flash-pagination.html" class="carousel-item card">
         <span>Flask Data Viewer</span>
       </a>
-
-      <a href="projects/python.html" class="card">
+      <a href="projects/python.html" class="carousel-item card">
         <span>Grade 9 Python Programs</span>
       </a>
     </div>
-  </section>
+    <button class="carousel-btn next" onclick="scrollCarousel(1)">&#8594;</button>
+  </div>
+</section>
+<!-- ...rest of your HTML... -->
+
+
 
   <!-- ================= ABOUT ================= -->
   <section class="about" id="about">
