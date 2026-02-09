@@ -88,34 +88,44 @@ nav a:hover {
   margin: 3rem auto;
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.05);
+  padding: 0 38px; /* room for arrows */
 }
 
 .carousel {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1.2rem;
+  scrollbar-width: none; /* hide scrollbar Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* hide scrollbar Chrome/Safari */
 }
 
 .carousel-item {
-  min-width: 100%;
-  padding: 3rem;
+  min-width: 240px;
+  max-width: 300px;
+  flex: 0 0 auto;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 2.3rem 1rem;
   text-align: center;
+  color: #cfd6ff;
+  font-size: 1.13rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
+  transition: background 0.25s, box-shadow 0.25s, color 0.18s;
+  cursor: pointer;
 }
 
-.carousel-item h3 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+.carousel-item:hover {
+  background: rgba(70, 100, 255, 0.1);
+  color: #fff;
 }
 
-.carousel-item p {
-  color: #b8c0ff;
-}
-
-/* =====================
-   CAROUSEL BUTTONS
-===================== */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -123,21 +133,24 @@ nav a:hover {
   background: rgba(20, 30, 70, 0.8);
   color: white;
   border: none;
-  padding: 0.6rem 1rem;
-  font-size: 1.2rem;
+  padding: 0.6rem 1.1rem;
+  font-size: 1.7rem;
   cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background 0.2s;
 }
 
 .carousel-btn:hover {
-  background: rgba(60, 90, 255, 0.9);
+  background: rgba(60, 90, 255, 0.95);
 }
 
-.prev {
-  left: 10px;
+.carousel-btn.prev {
+  left: 2px;
 }
 
-.next {
-  right: 10px;
+.carousel-btn.next {
+  right: 2px;
 }
 
 /* =====================
