@@ -5,13 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shreyans | Portfolio</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css?v=5">
 
-  <!-- Optional Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
   <!-- ================= HEADER ================= -->
@@ -25,10 +22,9 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- Center Logo -->
-      <div class="logo">
-        <!-- Replace logo.png with your logo file -->
-        <img src="images/logo.png" alt="Shreyans Logo">
+      <!-- Logo -->
+      <div class="logo-container">
+        <img class="logo" src="images/logo.png" alt="Shreyans Logo">
       </div>
 
     </div>
@@ -45,31 +41,22 @@
   <!-- ================= PROJECTS ================= -->
   <section class="projects" id="projects">
     <h2>Projects</h2>
-
-    <div class="carousel">
-
-      <!-- Project Card 1 -->
-      <a href="sql-project.html" class="card">
-        <span>Hospital Billing SQL Analysis</span>
+    <div class="projects-grid">
+      <a href="projects/sql-csv-import.html" class="card">
+        <span>SQL Healthcare Dashboard</span>
       </a>
 
-      <!-- Project Card 2 -->
-      <a href="python-project.html" class="card">
-        <span>Python CSV & Data Processing</span>
+      <a href="projects/data-analysis.html" class="card">
+        <span>Data Analysis Tasks</span>
       </a>
 
-      <!-- Project Card 3 -->
-      <a href="grade9.html" class="card">
+      <a href="projects/flash-pagination.html" class="card">
+        <span>Flask Data Viewer</span>
+      </a>
+
+      <a href="projects/python.html" class="card">
         <span>Grade 9 Python Programs</span>
       </a>
-
-      <!-- Add more cards anytime -->
-      <!--
-      <a href="new-project.html" class="card">
-        <span>New Project</span>
-      </a>
-      -->
-
     </div>
   </section>
 
@@ -94,9 +81,8 @@
     </p>
   </section>
 
-  <!-- ================= FOOTER ================= -->
   <footer class="footer">
-    <p>© 2025 Shreyans · Built with HTML, CSS & GitHub Pages</p>
+    <p>© 2026 Shreyans · Built with HTML, CSS & GitHub Pages</p>
   </footer>
 
 </body>
