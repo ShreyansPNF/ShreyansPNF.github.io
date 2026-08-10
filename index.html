@@ -1,96 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shreyans | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="style.css?v=5">
-<!-- Be sure to include this before </body> -->
-<script src="carousel.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <meta
+        name="description"
+        content="Shreyans Sharma — software, networking and infrastructure."
+    >
+
+    <title>Shreyans Sharma</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="header">
-    <div class="header-inner">
+    <!-- Floating material navigation -->
+    <header class="nav-shell">
+        <nav class="nav-material">
 
-      <!-- Navigation -->
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+            <a href="/" class="brand" aria-label="Home">
+                Shreyans<span>.</span>
+            </a>
 
-      <!-- Logo -->
-      <div class="logo-container">
-        <img class="logo" src="images/logo.png" alt="Shreyans Logo">
-      </div>
+            <div class="nav-items">
+                <a href="#work">Work</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+            </div>
 
-    </div>
-  </header>
+            <a href="#contact" class="nav-contact">
+                Contact
+            </a>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero">
-    <h1>Shreyans</h1>
-    <p>
-      Student · SQL · Python · Data Analysis · Web Development
-    </p>
-  </section>
-
-  <!-- ================= PROJECTS ================= -->
-<!-- ...header, hero, etc above... -->
-<section class="projects" id="projects">
-  <h2>Projects</h2>
-  <div class="carousel-wrapper">
-    <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#8592;</button>
-    <div class="carousel" id="carousel">
-      <a href="projects/sql-csv-import.html" class="carousel-item card">
-        <span>SQL Healthcare Dashboard</span>
-      </a>
-      <a href="projects/data-analysis.html" class="carousel-item card">
-        <span>Data Analysis Tasks</span>
-      </a>
-      <a href="projects/flash-pagination.html" class="carousel-item card">
-        <span>Flask Data Viewer</span>
-      </a>
-      <a href="projects/python.html" class="carousel-item card">
-        <span>Grade 9 Python Programs</span>
-      </a>
-    </div>
-    <button class="carousel-btn next" onclick="scrollCarousel(1)">&#8594;</button>
-  </div>
-</section>
-<!-- ...rest of your HTML... -->
+        </nav>
+    </header>
 
 
+    <main>
 
-  <!-- ================= ABOUT ================= -->
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-      I enjoy working with real-world data, building SQL databases,
-      analyzing hospital billing records, and turning datasets into
-      meaningful insights using Python and web technologies.
-    </p>
-  </section>
+        <!-- HERO -->
+        <section class="hero">
 
-  <!-- ================= CONTACT ================= -->
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>
-      GitHub:
-      <a href="https://github.com/ShreyansPNF" target="_blank">
-        github.com/ShreyansPNF
-      </a>
-    </p>
-  </section>
+            <div class="hero-inner">
 
-  <footer class="footer">
-    <p>© 2026 Shreyans · Built with HTML, CSS & GitHub Pages</p>
-  </footer>
+                <p class="eyebrow">
+                    SOFTWARE · NETWORKING · INFRASTRUCTURE
+                </p>
+
+                <h1>
+                    Building systems<br>
+                    that <span>work.</span>
+                </h1>
+
+                <p class="hero-copy">
+                    I'm Shreyans — a student exploring software,
+                    networking, Linux infrastructure and
+                    self-hosted systems.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#work" class="button button-primary">
+                        Explore my work
+                    </a>
+
+                    <a
+                        href="https://github.com/"
+                        class="button button-secondary"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-meta">
+                <span>Based in Nepal</span>
+                <span>2026</span>
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+        <section class="intro section">
+
+            <div class="section-label">
+                <span>01</span>
+                <span>ABOUT</span>
+            </div>
+
+            <div class="intro-content">
+
+                <h2>
+                    I learn by
+                    <em>building.</em>
+                </h2>
+
+                <p>
+                    Most of my technical experience comes from
+                    building systems myself — running Linux servers,
+                    configuring networks, deploying services,
+                    writing software and troubleshooting what breaks.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- WORK -->
+        <section id="work" class="section work">
+
+            <div class="section-label">
+                <span>02</span>
+                <span>SELECTED WORK</span>
+            </div>
+
+
+            <!-- FEATURED PROJECT -->
+            <article class="project-feature">
+
+                <div class="project-visual server-visual">
+
+                    <div class="visual-grid"></div>
+
+                    <div class="server-interface">
+
+                        <div class="interface-top">
+                            <span>HOMELAB</span>
+                            <span class="status">
+                                <i></i> ONLINE
+                            </span>
+                        </div>
+
+                        <div class="interface-content">
+
+                            <div>
+                                <small>CPU</small>
+                                <strong>12%</strong>
+                            </div>
+
+                            <div>
+                                <small>MEMORY</small>
+                                <strong>4.8 GB</strong>
+                            </div>
+
+                            <div>
+                                <small>STORAGE</small>
+                                <strong>1.7 TB</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-info">
+
+                    <div class="project-index">
+                        01
+                    </div>
+
+                    <p class="project-type">
+                        INFRASTRUCTURE
+                    </p>
+
+                    <h3>
+                        Linux<br>
+                        Home Server
+                    </h3>
+
+                    <p class="project-description">
+                        A self-hosted Linux environment running
+                        media, storage, monitoring, automation
+                        and other services through Docker.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Linux</span>
+                        <span>Docker</span>
+                        <span>CasaOS</span>
+                        <span>Jellyfin</span>
+                        <span>Samba</span>
+                    </div>
+
+                    <a href="#" class="text-link">
+                        Explore project
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT GRID -->
+            <div class="project-list">
+
+
+                <article class="project-row">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-main">
+
+                        <div>
+                            <p class="project-type">
+                                NETWORKING
+                            </p>
+
+                            <h3>
+                                Home Network
+                                Infrastructure
+                            </h3>
+                        </div>
+
+                        <p>
+                            Wired and wireless network design,
+                            routing, VLANs, troubleshooting
+                            and performance testing.
+                        </p>
+
+                    </div>
+
+                    <a href="#" class="project-arrow">
+                        ↗
+                    </a>
+
+                </article>
+
+
+                <article class="project-row">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-main">
+
+                        <div>
+                            <p class="project-type">
+                                NETWORKING
+                            </p>
+
+                            <h3>
+                                VLAN & Routing Lab
+                            </h3>
+                        </div>
+
+                        <p>
+                            Cisco networking work involving
+                            switching, VLANs, routing and
+                            inter-VLAN communication.
+                        </p>
+
+                    </div>
+
+                    <a href="#" class="project-arrow">
+                        ↗
+                    </a>
+
+                </article>
+
+
+                <article class="project-row">
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <div class="project-main">
+
+                        <div>
+                            <p class="project-type">
+                                SELF-HOSTING
+                            </p>
+
+                            <h3>
+                                Media & Service Stack
+                            </h3>
+                        </div>
+
+                        <p>
+                            Jellyfin, Navidrome, Home Assistant,
+                            monitoring and other services
+                            deployed on personal infrastructure.
+                        </p>
+
+                    </div>
+
+                    <a href="#" class="project-arrow">
+                        ↗
+                    </a>
+
+                </article>
+
+
+                <article class="project-row">
+
+                    <div class="project-number">
+                        05
+                    </div>
+
+                    <div class="project-main">
+
+                        <div>
+                            <p class="project-type">
+                                SOFTWARE
+                            </p>
+
+                            <h3>
+                                Python Projects
+                            </h3>
+                        </div>
+
+                        <p>
+                            Practical Python projects focused
+                            on automation, APIs, systems and
+                            problem solving.
+                        </p>
+
+                    </div>
+
+                    <a href="#" class="project-arrow">
+                        ↗
+                    </a>
+
+                </article>
+
+
+                <article class="project-row">
+
+                    <div class="project-number">
+                        06
+                    </div>
+
+                    <div class="project-main">
+
+                        <div>
+                            <p class="project-type">
+                                INFRASTRUCTURE
+                            </p>
+
+                            <h3>
+                                Minecraft Server
+                            </h3>
+                        </div>
+
+                        <p>
+                            Self-hosted Minecraft infrastructure
+                            involving Linux, Java, server
+                            configuration and troubleshooting.
+                        </p>
+
+                    </div>
+
+                    <a href="#" class="project-arrow">
+                        ↗
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills" class="section skills">
+
+            <div class="section-label">
+                <span>03</span>
+                <span>CAPABILITIES</span>
+            </div>
+
+            <div class="skills-layout">
+
+                <h2>
+                    Tools are useful.<br>
+                    Understanding is <em>better.</em>
+                </h2>
+
+
+                <div class="skill-groups">
+
+                    <div class="skill-group">
+                        <span>01</span>
+
+                        <div>
+                            <h3>Programming</h3>
+
+                            <p>
+                                Python · SQL · C · Java · Bash
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-group">
+                        <span>02</span>
+
+                        <div>
+                            <h3>Networking</h3>
+
+                            <p>
+                                TCP/IP · VLAN · Routing ·
+                                Switching · DNS · DHCP · Wi-Fi
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-group">
+                        <span>03</span>
+
+                        <div>
+                            <h3>Systems</h3>
+
+                            <p>
+                                Linux · Docker · SSH · Samba ·
+                                Storage · Server Administration
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-group">
+                        <span>04</span>
+
+                        <div>
+                            <h3>Infrastructure</h3>
+
+                            <p>
+                                Self-hosting · Cloudflare ·
+                                GitHub · Monitoring · Backups
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section class="section education">
+
+            <div class="section-label">
+                <span>04</span>
+                <span>LEARNING</span>
+            </div>
+
+            <div class="education-list">
+
+                <div class="education-item">
+                    <span>01</span>
+
+                    <div>
+                        <h3>Harvard CS50</h3>
+                        <p>
+                            Computer Science
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="education-item">
+                    <span>02</span>
+
+                    <div>
+                        <h3>Cisco CCNA</h3>
+                        <p>
+                            Networking · Routing · Switching · VLANs
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="education-item">
+                    <span>03</span>
+
+                    <div>
+                        <h3>Python Programming</h3>
+                        <p>
+                            Programming fundamentals
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="education-item">
+                    <span>04</span>
+
+                    <div>
+                        <h3>Introduction to SQL</h3>
+                        <p>
+                            Relational databases · SQL
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="education-item">
+                    <span>05</span>
+
+                    <div>
+                        <h3>Duke of Edinburgh's Award</h3>
+                        <p>
+                            Extracurricular development
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section about">
+
+            <div class="section-label">
+                <span>05</span>
+                <span>ABOUT</span>
+            </div>
+
+            <div class="about-content">
+
+                <h2>
+                    Curious about what happens
+                    <em>underneath.</em>
+                </h2>
+
+                <p>
+                    I'm particularly interested in the layer
+                    between software and hardware — networks,
+                    operating systems, servers and the infrastructure
+                    that makes applications possible.
+                </p>
+
+                <p>
+                    My projects are usually experiments:
+                    build something, find the failure point,
+                    understand why it failed, fix it,
+                    and document what I learned.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+
+            <p class="eyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Let's talk.
+            </h2>
+
+            <a href="mailto:YOUR_EMAIL@example.com"
+               class="contact-email">
+                YOUR_EMAIL@example.com
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <span>
+            Shreyans Sharma · 2026
+        </span>
+
+        <div>
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener">
+                GitHub
+            </a>
+
+            <a href="#">
+                LinkedIn
+            </a>
+        </div>
+
+    </footer>
+
+
+    <script type="module" src="js/main.js"></script>
 
 </body>
 </html>
